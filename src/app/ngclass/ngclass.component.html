@@ -1,0 +1,12 @@
+<h1 class="container">[ngclass]</h1>
+<div class="container bg-dark p-4">
+    
+  <p class="text-danger d-none" [ngClass]="{'d-block': activo=='primero'}">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, exercitationem repudiandae earum, deleniti provident velit odit aut autem suscipit vitae at tempore quis sit omnis asperiores! Veniam illo maiores soluta?</p>
+ 
+  <p class="text-info d-none" [ngClass]="{'d-block': activo=='segundo'}">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, exercitationem repudiandae earum, deleniti provident velit odit aut autem suscipit vitae at tempore quis sit omnis asperiores! Veniam illo maiores soluta?</p>    
+  
+  <button class="btn btn-danger" (click)="activo='primero'">Accion</button>
+  
+  <button class="btn btn-info" (click)="activo='segundo'">Accion</button>
+
+</div>
